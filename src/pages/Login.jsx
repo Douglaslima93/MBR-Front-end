@@ -9,11 +9,12 @@ const Login = () => {
         setNomeUsuario(event.target.value);
     };
 
+  
     return (
         <div className="login">
         <h1>Nome</h1>
         <input type="text" value={nomeUsuario} onChange={handleChange} placeholder="Digite o seu nome:"/>
-        <Link to={'questions/:id'}><input className="acessar" type="submit" value="Acessar" /></Link>
+        <Link to={'questions/:id'}><input className="acessar" type="submit" value="Acessar"/></Link>
         </div>
     )
 }
