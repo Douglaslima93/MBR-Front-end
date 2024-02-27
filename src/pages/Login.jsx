@@ -10,10 +10,10 @@ const Login = () => {
     };
 
     return (
-        <div>
+        <div className="login">
         <h1>Nome</h1>
-        <input type="text" value={nomeUsuario} onChange={handleChange} placeholder="Digite o seu nome:" />
-        <Link to={'/questions'}><input type="submit" value="Acessar" /></Link>
+        <input type="text" value={nomeUsuario} onChange={handleChange} placeholder="Digite o seu nome:"/>
+        <Link to={'questions/:id'}><input className="acessar" type="submit" value="Acessar" /></Link>
         </div>
     )
 }

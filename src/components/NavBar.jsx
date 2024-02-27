@@ -7,7 +7,6 @@ const NavBar = () => {
     return (
         
         <nav>
-            
             <p>Olá</p>
         </nav>
     )
