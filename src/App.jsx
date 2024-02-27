@@ -1,10 +1,13 @@
 import './App.css'
+import { Outlet } from 'react-router-dom';
+import Login from './pages/Login.jsx';
 
 function App() {
 
   return (
-      <div>
-        
+      <div className='App'>
+        <Login/>
+        <Outlet/>
       </div>
   )
 }
