@@ -6,10 +6,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login.jsx';
 import Questions from './pages/Questions.jsx';
 import Score from './pages/Score.jsx';
+import { UserNameProvider } from './contexts/userNameContext.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <UserNameProvider>
       <BrowserRouter>
       <Routes>
 
@@ -20,5 +21,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       </Routes>
       </BrowserRouter>
-  </React.StrictMode>,
+  </UserNameProvider>,
 )

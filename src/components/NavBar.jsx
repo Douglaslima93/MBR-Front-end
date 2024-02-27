@@ -1,16 +1,16 @@
 import React from "react";
 import './NavBar.css';
-import Login from "../pages/Login";
-
+import { UserNameContext } from "../contexts/userNameContext"; 
+import { useContext } from 'react'
 
 const NavBar = () => {
 
-    //const nome = Login.state.nomeUsuario;
+    const [name] = useContext(UserNameContext)
     
     return (
         
         <nav>
-            <p>Nome Usuario</p>
+            <p>Nome:{name}</p>
         </nav>
     )
 }
